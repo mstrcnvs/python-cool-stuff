@@ -2,13 +2,13 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		sass: {
 			dist: {
-				files: {'css/global.css': 'assets/global.scss'},
+				files: {'css/global.css': 'sass/global.scss'},
 				options: { style: 'compressed' }
 			}
 		},
 		watch: {
 			stylesheets: {
-				files: 'assets/*.scss',
+				files: 'sass/*.scss',
 				tasks: ['sass']
 			}
 		}
