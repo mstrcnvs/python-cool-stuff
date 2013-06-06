@@ -16,37 +16,34 @@
 		<article id="looping-backwards">
 			<h2><a href="#looping-backwards">Looping backwards</a></h2>
 			<p>With <em>reversed</em> you get an iterator over the backwards of the sequence you passed in:</p>
-			<pre>
-				<code>>>> s = [1, 2, 3, 4, 5]
->>> for i in reversed(s):
-...     print i
+<code class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="n">i</span>
 
-5 4 3 2 1</code>
-			</pre>
+<span class="mi">5</span> <span class="mi">4</span> <span class="mi">3</span> <span class="mi">2</span> <span class="mi">1</span>
+</pre></code>
 		</article>
 
 		<article id="simple-http-server">
 			<h2><a href="#simple-http-server">SimpleHTTPServer</a></h2>
 			<p>Want to know how your site looks on the server? Just launch the python built-in <em>SimpleHTTPServer</em> module:</p>
-			<pre>
-				<code>$ python -m SimpleHTTPServer
-$ Serving HTTP on 0.0.0.0 port 8000 ...</code>
-			</pre>
+<code class="highlight"><pre><span class="nv">$ </span>python -m SimpleHTTPServer
+<span class="nv">$ </span>Serving HTTP on 0.0.0.0 port 8000 ...
+</pre></code>
 		</article>
 
 		<article id="defaultdict">
 			<h2><a href="#defaultdict">defaultdict</a></h2>
 			<p>With defauldict you'll never get a <em>KeyError</em>. Instead, it will always return the factory function you passed in:</p>
-			<pre>
-				<code>>>> from collections import defaultdict
->>> s = 'mississippi'
->>> d = defaultdict(int)
->>> for k in s:
-...     d[k] += 1
-...
->>> d.items()
-[('i', 4), ('p', 2), ('s', 4), ('m', 1)]</code>
-			</pre>
+<code class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&#39;mississippi&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+<span class="o">...</span>     <span class="n">d</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="o">...</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">[(</span><span class="s">&#39;i&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;p&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;s&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;m&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
+</pre></code>
 		</article>
 	</main>
 	<footer>
