@@ -15,7 +15,7 @@
 	<main>
 		<article id="looping-backwards">
 			<h2><a href="#looping-backwards">Looping backwards</a></h2>
-			<p>With <em>reversed</em> you get an iterator over the backwards of the sequence you passed in:</p>
+			<p>With <a href="http://docs.python.org/2/library/functions.html?highlight=reversed#reversed">reversed</a> you get an iterator over the backwards of the sequence you passed in:</p>
 <code class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
 <span class="o">...</span>     <span class="k">print</span> <span class="n">i</span>
@@ -26,7 +26,7 @@
 
 		<article id="simple-http-server">
 			<h2><a href="#simple-http-server">SimpleHTTPServer</a></h2>
-			<p>Want to know how your site looks on the server? Just launch the python built-in <em>SimpleHTTPServer</em> module:</p>
+			<p>Want to know how your site looks on the server? Just launch the python built-in <a href="http://docs.python.org/2/library/simplehttpserver.html#module-SimpleHTTPServer">SimpleHTTPServer</a> module:</p>
 <code class="highlight"><pre><span class="nv">$ </span>python -m SimpleHTTPServer
 <span class="nv">$ </span>Serving HTTP on 0.0.0.0 port 8000 ...
 </pre></code>
@@ -34,7 +34,7 @@
 
 		<article id="defaultdict">
 			<h2><a href="#defaultdict">defaultdict</a></h2>
-			<p>With <em>defaultdict</em> you'll never get a <em>KeyError</em>. Instead, it will always return the factory function you passed in:</p>
+			<p>With <a href="http://docs.python.org/2/library/collections.html?highlight=defaultdict#collections.defaultdict">defaultdict</a> you'll never get a <a href="http://docs.python.org/2/library/exceptions.html?highlight=keyerror#exceptions.KeyError">KeyError</a>. Instead, it will always return the factory function you passed in:</p>
 <code class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&#39;mississippi&#39;</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>

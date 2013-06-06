@@ -64,8 +64,14 @@ main {
 		max-width: 50%;
 		margin: 0.9em 0 0.9em 0;
 
-		em {
+		a {
 			color: darken($primary-color, 10%);
+			text-decoration: none;
+
+			&:hover {
+				color: $primary-color;
+				text-decoration: underline;
+			}
 		}
 	}
 
