@@ -82,3 +82,19 @@ main {
 		padding: 10px;
 	}
 }
+
+footer {
+	color: darken($bg-color, 40%);
+	padding: 2%;
+	text-align: center;
+	font-size: 0.9em;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			color: darken($bg-color, 60%);
+		}
+	}
+}
