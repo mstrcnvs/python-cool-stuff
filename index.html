@@ -13,17 +13,30 @@
 		<h2>A collection of snippets and well-known techniques to make your code more concise & elegant.</h2>
 	</header>
 	<main>
+		<article id="looping-backwards">
+			<h2><a href="#looping-backwards">Looping backwards</a></h2>
+			<p>With <em>reversed</em> you get an iterator over the backwards of the sequence you passed in:</p>
+			<pre>
+				<code>>>> s = [1, 2, 3, 4, 5]
+>>> for i in reversed(s):
+...     print i
+
+5 4 3 2 1</code>
+			</pre>
+		</article>
+
 		<article id="simple-http-server">
-			<h2><a href="simple-http-server">SimpleHTTPServer</a></h2>
-			<p>Want to know how your site looks on the server? Just launch the python built-in SimpleHTTPServer module:</p>
+			<h2><a href="#simple-http-server">SimpleHTTPServer</a></h2>
+			<p>Want to know how your site looks on the server? Just launch the python built-in <em>SimpleHTTPServer</em> module:</p>
 			<pre>
 				<code>$ python -m SimpleHTTPServer
 $ Serving HTTP on 0.0.0.0 port 8000 ...</code>
 			</pre>
 		</article>
+
 		<article id="defaultdict">
 			<h2><a href="#defaultdict">defaultdict</a></h2>
-			<p>With defauldict you'll never get a KeyError. Instead, it will always return the factory function you passed in:</p>
+			<p>With defauldict you'll never get a <em>KeyError</em>. Instead, it will always return the factory function you passed in:</p>
 			<pre>
 				<code>>>> from collections import defaultdict
 >>> s = 'mississippi'
