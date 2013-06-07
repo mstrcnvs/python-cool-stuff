@@ -26,6 +26,10 @@
 <span class="n">adam</span> <span class="o">-&gt;</span> <span class="n">tea</span>
 <span class="n">betty</span> <span class="o">-&gt;</span> <span class="n">milk</span>
 </pre></code>
+			<p>You can even construct a dict from these two lists with <a href="http://docs.python.org/2/library/functions.html#zip">zip</a>/<a href="http://docs.python.org/2/library/itertools.html#itertools.izip">izip</a>:</p>
+<code class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">izip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">drinks</span><span class="p">))</span>
+<span class="p">{</span><span class="s">&#39;john&#39;</span><span class="p">:</span> <span class="s">&#39;coffee&#39;</span><span class="p">,</span> <span class="s">&#39;adam&#39;</span><span class="p">:</span> <span class="s">&#39;tea&#39;</span><span class="p">,</span> <span class="s">&#39;betty&#39;</span><span class="p">:</span> <span class="s">&#39;milk&#39;</span><span class="p">}</span>
+</pre></code>
 		</article>
 
 		<article id="looping-backwards">
