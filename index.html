@@ -13,13 +13,28 @@
 		<h2>A collection of snippets and well-known techniques to make your code more concise & elegant.</h2>
 	</header>
 	<main>
+		<article id="looping-over-two-collections">
+			<h2><a href="#looping-over-two-collections">Looping over two collections</a></h2>
+			<p><a href="http://docs.python.org/2/library/functions.html#zip">zip</a> (or <a href="http://docs.python.org/2/library/itertools.html#itertools.izip">izip</a> for better performance) let you iterate over two collections at the same time by returning tuples of their corresponding values:</p>
+<code class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;john&#39;</span><span class="p">,</span> <span class="s">&#39;adam&#39;</span><span class="p">,</span> <span class="s">&#39;betty&#39;</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">drinks</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;coffee&#39;</span><span class="p">,</span> <span class="s">&#39;tea&#39;</span><span class="p">,</span> <span class="s">&#39;milk&#39;</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">drink</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">drinks</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s">&#39; -&gt; &#39;</span> <span class="o">+</span> <span class="n">drink</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="n">john</span> <span class="o">-&gt;</span> <span class="n">coffee</span>
+<span class="n">adam</span> <span class="o">-&gt;</span> <span class="n">tea</span>
+<span class="n">betty</span> <span class="o">-&gt;</span> <span class="n">milk</span>
+</pre></code>
+		</article>
+
 		<article id="looping-backwards">
 			<h2><a href="#looping-backwards">Looping backwards</a></h2>
 			<p>With <a href="http://docs.python.org/2/library/functions.html?highlight=reversed#reversed">reversed</a> you get an iterator over the backwards of the sequence you passed in:</p>
 <code class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
 <span class="o">...</span>     <span class="k">print</span> <span class="n">i</span>
-
+<span class="o">...</span>
 <span class="mi">5</span> <span class="mi">4</span> <span class="mi">3</span> <span class="mi">2</span> <span class="mi">1</span>
 </pre></code>
 		</article>
