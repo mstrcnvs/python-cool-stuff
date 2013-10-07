@@ -111,6 +111,15 @@ Namespaces are one honking great idea -- let's do more of those!
 <span class="p">[(</span><span class="s">&#39;i&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;p&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;s&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;m&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
 </pre></code>
 		</article>
+
+		<article id="dictcomprehension">
+			<h2><a href="#dictcomprehension">dict comprehension</a></h2>
+			<p>Likewise list, there's a way to create dictionary using the 'comprehension-way':</p>
+<code class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="p">{</span> i <span class="p">:</span> chr<span class="p">(</span><span class="mi">65</span>+i<span class="p">)</span> <span class="k">for</span> i <span class="k">in</span> range<span class="p">(</span><span class="mi">26</span><span class="p">) }</span></pre></code>
+<p>This will prompt:</p>
+<code class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="p">{</span><span class="mi">0</span>: <span class="s">&#39;A&#39;</span>, <span class="mi">1</span>: <span class="s">&#39;B&#39;</span>, <span class="mi">2</span>: <span class="s">&#39;C&#39;</span>, <span class="mi">3</span>: <span class="s">&#39;D&#39;</span>, <span class="mi">4</span>: <span class="s">&#39;E&#39;</span>, <span class="mi">5</span>: <span class="s">&#39;F&#39;</span>, <span class="mi">6</span>: <span class="s">&#39;G&#39;</span>, <span class="mi">7</span>: <span class="s">&#39;H&#39;</span>, <span class="mi">8</span>: <span class="s">&#39;I&#39;</span>, <span class="mi">9</span>: <span class="s">&#39;J&#39;</span>, <span class="mi">10</span>: <span class="s">&#39;K&#39;</span>, <span class="mi">11</span>: <span class="s">&#39;L&#39;</span>, <span class="mi">12</span>: <span class="s">&#39;M&#39;</span>, <span class="mi">13</span>: <span class="s">&#39;N&#39;</span>, <span class="mi">14</span>: <span class="s">&#39;O&#39;</span>, <span class="mi">15</span>: <span class="s">&#39;P&#39;</span>, <span class="mi">16</span>: <span class="s">&#39;Q&#39;</span>, <span class="mi">17</span>: <span class="s">&#39;R&#39;</span>, <span class="mi">18</span>: <span class="s">&#39;S&#39;</span>, <span class="mi">19</span>: <span class="s">&#39;T&#39;</span>, <span class="mi">20</span>: <span class="s">&#39;U&#39;</span>, <span class="mi">21</span>: <span class="s">&#39;V&#39;</span>, <span class="mi">22</span>: <span class="s">&#39;W&#39;</span>, <span class="mi">23</span>: <span class="s">&#39;X&#39;</span>, <span class="mi">24</span>: <span class="s">&#39;Y&#39;</span>, <span class="mi">25</span>: <span class="s">&#39;Z&#39;</span><span class="p">}</span>
+</pre></code>
+		</article>
 	</main>
 	<footer>
 		<div>made by <a href="https://twitter.com/mstrcnvs">@mstrcnvs</a></div>
